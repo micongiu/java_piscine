@@ -2,21 +2,21 @@ package day_00.ex01;
 
 import java.util.Scanner;
 
-/**
- * This program determines if a given integer is a prime number.
- * It takes an integer as input from the user, checks for invalid input (numbers <= 1),
- * and then uses an optimized primality test (checking divisibility up to the square root
- * of the number) to determine if the number is prime. It prints "true" or "false"
- * along with the number of iterations required for the check.
- */
+/*
+* This program determines if a given integer is a prime number.
+* It takes an integer as input from the user, checks for invalid input (numbers <= 1),
+* and then uses an optimized primality test (checking divisibility up to the square root
+* of the number) to determine if the number is prime. It prints "true" or "false"
+* along with the number of iterations required for the check.
+*/
 
 public class Program {
 
 	/**
-     * This function checks if a number is prime and returns the number of iterations.
-     * @param number The number to check for primality.
-     * @return The number of iterations performed during the primality test.
-     */
+	 * This function checks if a number is prime and returns the number of iterations.
+	 * @param number The number to check for primality.
+	 * @return The number of iterations performed during the primality test.
+	 */
 
 	public static int its_prime(int number) {
 		int iterations = 0;
