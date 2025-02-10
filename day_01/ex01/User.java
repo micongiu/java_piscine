@@ -11,13 +11,10 @@ public class User {
 	private int balance;
 	private String name;
 
-	/*
-	* Constructs a new User object.
-	*
-	* @param name    The user's name.
-	* @param balance The user's initial balance.
-	* @throws IllegalArgumentException If the initial balance is negative.
-	*/
+	// Constructs a new User object.
+	// @param name    The user's name.
+	// @param balance The user's initial balance.
+	// @throws IllegalArgumentException If the initial balance is negative.
 	public User(String name, int balance) {
 		this.identifier = UserIdsGenerator.getInstance().generateId();
 		this.name = name;

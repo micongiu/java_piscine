@@ -9,34 +9,23 @@ public class UserIdsGenerator {
 		private int id_counter;
 		private static UserIdsGenerator instance;
 	
-		/*
-		* Private constructor to prevent instantiation from outside the class.
-		*/
-
+		// Private constructor to prevent instantiation from outside the class.
 		private UserIdsGenerator() {
 			id_counter = 0;
 		}
 
-		/*
-		* Returns the single instance of the UserIdsGenerator (Singleton pattern).
-		* Creates the instance if it doesn't already exist.
-		*
-		* @return The UserIdsGenerator instance.
-		*/
-
+		// Returns the single instance of the UserIdsGenerator (Singleton pattern).
+		// Creates the instance if it doesn't already exist.
+		// @return The UserIdsGenerator instance.
 		public static UserIdsGenerator getInstance() {
 			if (instance == null) {
 				instance = new UserIdsGenerator();
 			}
 			return instance;
 		}
-		
-		/*
-		* Generates a new unique user identifier.
-		*
-		* @return The generated user identifier.
-		*/
-
+				
+		// Generates a new unique user identifier.
+		// @return The generated user identifier.
 		public int generateId() {
 			return ++id_counter;
 		}

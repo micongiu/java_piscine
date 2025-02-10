@@ -20,16 +20,12 @@ public class Transaction {
 	TransferCategory transferCategory;
 	int transfer_amount;
 
-	/*
-	* Constructs a new Transaction object.
-	*
-	* @param Sender         The user initiating the transaction.
-	* @param Recipient      The user receiving the transaction.
-	* @param transfer_amount The amount to transfer (negative for outgoing, positive for incoming).
-	* @param type           The category of the transfer (OUTGOING or INCOMING).
-	* @throws IllegalArgumentException If the transfer amount is invalid, or if the sender has insufficient funds.
-	*/
-	
+	// Constructs a new Transaction object.
+	// @param Sender         The user initiating the transaction.
+	// @param Recipient      The user receiving the transaction.
+	// @param transfer_amount The amount to transfer (negative for outgoing, positive for incoming).
+	// @param type           The category of the transfer (OUTGOING or INCOMING).
+	// @throws IllegalArgumentException If the transfer amount is invalid, or if the sender has insufficient funds.
 	public Transaction(User Sender, User Recipient, int transfer_amount, TransferCategory type) {
 		UUID uuid = UUID.randomUUID();
 		this.identifier = uuid.toString();
