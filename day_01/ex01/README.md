@@ -21,8 +21,4 @@ The `UserIdsGenerator` class implements the Singleton pattern.  The private cons
 
 The `User` class now uses the `UserIdsGenerator` to get its unique `identifier` in the constructor.  The `identifier` field is declared as `final`, making it read-only after initialization.  This ensures that the user's ID cannot be changed after the user object is created.
 
-### Program Class
-
-The `Program` class demonstrates the creation of multiple `User` objects.  Because of the `UserIdsGenerator`, each user will have a unique ID, even if they share the same name.  The output shows the generated user information, including the unique identifiers.
-
 This exercise provides a practical example of how to generate unique IDs and how to use the Singleton pattern. It also demonstrates how to make fields read-only to protect data integrity.

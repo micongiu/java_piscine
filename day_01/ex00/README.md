@@ -21,4 +21,8 @@ This exercise helped me understand and practice the following concepts:
 
 ### User Class
 
-The `User` class represents a user with an `identifier`, `name`, and `balance`. The constructor ensures that the initial balance is not negative.  Getters provide access to the user's information.
+The `User` class represents a user with an `identifier`, `name`, and `balance`. The constructor ensures that the initial balance is not negative. Getters provide access to the user's information.
+
+### Transaction Class
+
+The `Transaction` class represents a money transfer between two users. It stores information about the transaction, including a unique identifier (`identifier`) generated using `UUID.randomUUID()`, the sender (`Sender`), the recipient (`Recipient`), the transfer category (`transferCategory`), and the transfer amount (`transfer_amount`). The `transferCategory` is an enum with values `OUTGOING` and `INCOMING`.  The constructor enforces rules regarding transfer amounts (positive for incoming, negative for outgoing) and sufficient funds for outgoing transfers. If any of these rules are violated, an `IllegalArgumentException` is thrown.

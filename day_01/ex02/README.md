@@ -17,4 +17,12 @@ This exercise builds upon previous exercises and introduces the following:
 
 ### UsersList Interface
 
-The `UsersList` interface defines the methods for adding users, retrieving users by ID and index, and getting the number of users.
+The `UsersList` interface defines the methods for adding users (`addUser`), retrieving users by ID (`getUserById`), retrieving users by index (`getUserByIndex`), and getting the number of users (`getNumberOfUsers`).  It serves as a contract for any class that wants to implement a user list.
+
+### UsersArrayList Class
+
+The `UsersArrayList` class implements the `UsersList` interface and provides a concrete implementation for managing a list of `User` objects.  It uses an array (`users`) to store the user data.  A key feature of this class is that it dynamically resizes the array when it becomes full.  When a new user is added and the array is at capacity, the array's size is increased (by 50% in this implementation) to accommodate the new user.  This prevents a fixed limit on the number of users that can be stored.  The `getUserById` method searches the array for a user with the specified ID and throws a `UserNotFoundException` if the user is not found. The `getUserByIndex` method retrieves a user at a given index, returning null if the index is out of bounds.
+
+### UserNotFoundException Class
+
+The `UserNotFoundException` is a custom, unchecked exception (extends `RuntimeException`) that is thrown by the `UsersArrayList` class when a user with a specific ID is not found.  Using a custom exception makes error handling more specific and allows the calling code to handle this particular error condition appropriately.

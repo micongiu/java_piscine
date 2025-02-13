@@ -1,10 +1,8 @@
 package day_01.ex00;
 
-/*
- * The User class represents a user in the system.
- * It stores the user's unique identifier, name, and balance.
- * It also provides methods for accessing and modifying the user's balance.
- */
+// The User class represents a user in the system.
+// It stores the user's unique identifier, name, and balance.
+// It also provides methods for accessing and modifying the user's balance.
 
 public class User {
 	private int identifier;

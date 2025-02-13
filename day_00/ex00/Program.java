@@ -1,10 +1,8 @@
 package day_00.ex00;
 
-/*
-* This program calculates the sum of the digits of a given integer.
-* It converts the integer to a string, iterates through the characters
-* representing the digits, and adds their numeric values to compute the sum.
-*/
+// This program calculates the sum of the digits of a given integer.
+// It converts the integer to a string, iterates through the characters
+// representing the digits, and adds their numeric values to compute the sum.
 
 public class Program {
 

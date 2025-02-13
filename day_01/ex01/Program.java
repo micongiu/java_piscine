@@ -1,9 +1,7 @@
 package day_01.ex01;
 
-/**
- * The Program class demonstrates the creation of User objects and displays their information.
- * It showcases the use of the UserIdsGenerator to ensure unique user identifiers.
- */
+// The Program class demonstrates the creation of User objects and displays their information.
+// It showcases the use of the UserIdsGenerator to ensure unique user identifiers.
 
 public class Program {
 	public static void main(String[] args) {

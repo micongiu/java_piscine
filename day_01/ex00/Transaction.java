@@ -2,12 +2,10 @@ package day_01.ex00;
 
 import java.util.UUID;
 
-/*
-* The Transaction class represents a money transfer between two users.
-* It stores information about the transaction, including a unique identifier,
-* the sender, the recipient, the transfer category (incoming or outgoing), and the transfer amount.
-* It also handles the transfer of funds between users, ensuring that balances remain valid.
-*/
+// The Transaction class represents a money transfer between two users.
+// It stores information about the transaction, including a unique identifier,
+// the sender, the recipient, the transfer category (incoming or outgoing), and the transfer amount.
+// It also handles the transfer of funds between users, ensuring that balances remain valid.
 
 public class Transaction {
 	public enum TransferCategory {

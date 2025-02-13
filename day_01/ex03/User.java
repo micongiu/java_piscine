@@ -1,10 +1,9 @@
 package day_01.ex03;
 
-/*
-* The User class represents a user in the system.
-* It stores the user's unique identifier, name, and balance.
-* The identifier is generated using the UserIdsGenerator to ensure uniqueness.
-*/
+// The User class represents a user in the system. It stores the user's unique
+// identifier, name, and balance. The identifier is generated using the
+// UserIdsGenerator to ensure uniqueness. It also holds a TransactionsList
+// object to store the user's transactions.
 
 public class User {
 	private final int identifier;
@@ -23,23 +22,33 @@ public class User {
 			throw new IllegalArgumentException("Initial balance cannot be negative.");
 		}
 		this.balance = balance;
-		this.Transactions
+		this.Transactions = new TransactionsLinkedList();
 	}
 
 	// Methods getter
+
+	public TransactionsList getTransactions() {
+		return Transactions;
+	}
+	
 	public int getIdentifier() {
 		return identifier;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
-
+	
 	public int getBalance() {
 		return balance;
 	}
-
+	
 	// Methods setter
+
+	public void addTransaction(Transaction transaction) {  // Add this method!
+		Transactions.AddTransaction(transaction);
+	}
+
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}

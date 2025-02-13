@@ -1,9 +1,7 @@
 package day_01.ex03;
 
-/*
-* The UserIdsGenerator class is a singleton that generates unique user identifiers.
-* It ensures that only one instance of the generator exists to prevent duplicate IDs.
-*/
+// The UserIdsGenerator class is a singleton class responsible for generating unique
+// user identifiers. It uses a counter to ensure that each user gets a distinct ID.
 
 public class UserIdsGenerator {
 		private int id_counter;

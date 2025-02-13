@@ -1,11 +1,9 @@
 package day_01.ex00;
 
-/*
- * The Program class demonstrates the functionality of the User and Transaction classes.
- * It creates User objects, performs transactions between them, and prints the state
- * of the users and transactions to the console. It also showcases error handling
- * for invalid transaction amounts and insufficient funds.
- */
+// The Program class demonstrates the functionality of the User and Transaction classes.
+// It creates User objects, performs transactions between them, and prints the state
+// of the users and transactions to the console. It also showcases error handling
+// for invalid transaction amounts and insufficient funds.
 
 public class Program {
 	public static void main(String[] args) {

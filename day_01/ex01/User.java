@@ -1,10 +1,8 @@
 package day_01.ex01;
 
-/*
-* The User class represents a user in the system.
-* It stores the user's unique identifier, name, and balance.
-* The identifier is generated using the UserIdsGenerator to ensure uniqueness.
-*/
+// The User class represents a user in the system.
+// It stores the user's unique identifier, name, and balance.
+// The identifier is generated using the UserIdsGenerator to ensure uniqueness.
 
 public class User {
 	private final int identifier;
