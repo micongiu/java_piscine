@@ -7,17 +7,11 @@ This exercise explores the basics of multithreading in Java. The goal is to crea
 This exercise helped me understand and practice the following concepts:
 
 *   **Thread Creation:**  I learned how to create and start threads in Java by extending the `Thread` class.  This involved defining the `run()` method, which contains the code that each thread will execute.
-
 *   **Shared Data and Immutability:** I used a `SharedData` class to hold the number of iterations for the threads.  Crucially, I made the `counter` variable `final`. This ensures that it's immutable (cannot be changed) after initialization, which is essential for thread safety in this read-only scenario.  Immutable data doesn't require synchronization.
-
 *   **Thread Synchronization (CountDownLatch):** I used a `CountDownLatch` to synchronize the *start* of the "Egg" and "Hen" threads.  The latch is initialized with a count of 2. Each thread counts down the latch when it's ready to run. The main thread waits on the latch to reach zero, ensuring that both threads have started their execution before the main thread proceeds. This latch also used to wait the end of the threads.
-
 *   **Thread Joining (`join()`):** I learned how to use the `join()` method to make the main thread wait for the "Egg" and "Hen" threads to *complete* their execution before the main thread proceeds.  This is absolutely vital to ensure that the "Human" messages are printed only *after* the other threads have finished.
-
 *   **Command-Line Arguments:** I practiced reading command-line arguments using the `args` array in the `main` method. This allows the user to specify the number of iterations for the threads using the `--count` flag.
-
 *   **Error Handling:** I included error handling for invalid command-line arguments (non-integer values for `--count`) using a `try-catch` block and `System.exit()`.
-
 *   **Concurrency and Interleaving:** By running the program multiple times, I observed how the output of the "Egg" and "Hen" threads is interleaved, demonstrating the concurrent nature of multithreading. The specific order of "Egg" and "Hen" messages will vary on each run due to the non-deterministic nature of thread scheduling.
 
 ## Code Explanation
