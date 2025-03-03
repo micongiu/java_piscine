@@ -12,7 +12,7 @@ public class SumTask implements Runnable {
     private final int end;
     private final int threadId;
 
-    public SumTask(int threadId, int start, int end, int[] summingArray, AtomicInteger result) { // Add threadId to constructor
+    public SumTask(int threadId, int start, int end, int[] summingArray, AtomicInteger result) {
         this.summingArray = summingArray;
         this.result = result;
         this.start = start;
@@ -26,7 +26,7 @@ public class SumTask implements Runnable {
         for (int value : summingArray) {
             sum += value;
         }
-        System.out.println("Thread " + threadId + ": from " + start + " to " + end + " is " + sum); // Use threadId
+        System.out.println("Thread " + threadId + ": from " + start + " to " + end + " is " + sum);
         result.addAndGet(sum);
     }
 }
